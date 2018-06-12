@@ -121,6 +121,7 @@ func installSysmon(installDir string) (err error) {
 	if err != nil {
 		log.Println("Error starting Sysmon.")
 		log.Println("If exit status is 1242, it probably means you need to uninstall sysmon with 'Sysmon.exe -u'.")
+		log.Println("If exit status is 740, it's probably because you're not running this as admin.")
 		return
 	} else {
 		log.Println("Successfully started Sysmon.")
