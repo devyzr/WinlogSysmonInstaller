@@ -1,5 +1,7 @@
 package main
 
+//go:generate go-bindata -pkg $GOPACKAGE -o assets.go assets/
+
 import (
 	"io/ioutil"
 	"log"
