@@ -15,7 +15,7 @@ Credit goes to Mathias Lafeldt for his awesome [Embedding Assets in Go](https://
 - Clone this repository using `git clone` or download and uncompress the zip.
 - Download Sysmon.exe from https://live.sysinternals.com/Sysmon.exe, and put it into the assets folder. It's not included due to licensing reasons.
 - Update line 107 in the winlogbeat.yml file in the assets directory so that your IP matches your ELK server and make any other necessary adjustments.
-- Customize [Swift on Security](https://github.com/SwiftOnSecurity/sysmon-config)'s sysmonconfig-export.xml that's in the assets folder according to your needs, it's already set up very well though and isn't strictly necessary.
+- Customize [Swift on Security](https://github.com/SwiftOnSecurity/sysmon-config)'s sysmonconfig-export.xml that's in the assets folder according to your needs, it's already set up very well though and personalization isn't strictly necessary.
 - Copy the cert you generated in the tutorial into the assets directory, make sure it's called 'ELK-Stack.crt'.
 - Run `go generate` and then `go build` in the project folder. (Note: I'm building this in windows, if you're doing it in linux you're probably going to have to tell Go to output an .exe)
 - Test on an endpoint!
